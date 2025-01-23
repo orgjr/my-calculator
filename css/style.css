@@ -70,24 +70,24 @@ body {
   margin-left: 5px;
 }
 
-.bt-0,
-.bt-1,
-.bt-2,
-.bt-3,
-.bt-4,
-.bt-5,
-.bt-6,
-.bt-7,
-.bt-8,
-.bt-9,
-.bt-0,
-.bt-A,
-.bt-C,
-.bt-equals,
-.bt-plus,
-.bt-less,
-.bt-mult,
-.bt-divi {
+#bt-0,
+#bt-1,
+#bt-2,
+#bt-3,
+#bt-4,
+#bt-5,
+#bt-6,
+#bt-7,
+#bt-8,
+#bt-9,
+#bt-0,
+#bt-A,
+#bt-C,
+#bt-equals,
+#bt-plus,
+#bt-less,
+#bt-mult,
+#bt-divi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,9 +99,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bt-C {
+#bt-C {
   height: calc((400px / 4 - 5px) / 2);
 }
-.bt-equals {
+#bt-equals {
   height: calc((400px / 4 - 5px) / 2);
+}
+
+#numbers-input {
+  font-size: 56px;
 }
