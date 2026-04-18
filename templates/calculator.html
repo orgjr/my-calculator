@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/reset.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <main class="calculator-surface">
+      <div class="calculator">
+        <div class="the-input">
+          <div id="operation-display"></div>
+        </div>
+
+        <section style="user-select: none" class="buttons-surface">
+          <ul class="first-column">
+            <li class="buttons" id="bt-1">1</li>
+            <li class="buttons" id="bt-4">4</li>
+            <li class="buttons" id="bt-7">7</li>
+            <li class="buttons" id="comma">,</li>
+          </ul>
+          <ul class="second-column">
+            <li class="buttons" id="bt-2">2</li>
+            <li class="buttons" id="bt-5">5</li>
+            <li class="buttons" id="bt-8">8</li>
+            <li class="buttons" id="bt-0">0</li>
+          </ul>
+          <ul class="third-column">
+            <li class="buttons" id="bt-3">3</li>
+            <li class="buttons" id="bt-6">6</li>
+            <li class="buttons" id="bt-9">9</li>
+            <li class="buttons" id="equals">=</li>
+            <li class="buttons" id="clear">C</li>
+          </ul>
+          <ul class="fourth-column">
+            <li class="buttons" id="plus">+</li>
+            <li class="buttons" id="less">-</li>
+            <li class="buttons" id="mult">*</li>
+            <li class="buttons" id="divi">/</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/numberButtons.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/operationButtons.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/equalsButton.js') }}"
+    ></script>
+  </body>
+</html>
